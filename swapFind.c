@@ -8,7 +8,7 @@ int * lowest(int * list, int size){
 	int * currLow = list;
 	for(int i = 0; i < size; i++){
 	  if(*currLow > *(list+i)){
-			currLow = list;
+			currLow = *(list+i);
 		}
 	}
 	return currLow;
